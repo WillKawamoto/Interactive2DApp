@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div id="header-container">
+            <h1>Assignment 1</h1>
+            <h2>An Interactive 2D Drawing Application | <a
+                    href="https://canvas.ucdavis.edu/courses/595787/assignments/718396">Instructions</a></h2>
+        </div>
+        <div class="settings-container">
+            <div class="modes-container">
+                <h3>Object to Draw</h3>
+                <div class="modes">
+                    <div id="pointToDraw" class="indicator inactive">Point(p)</div>
+                    <div id="triangleToDraw" class="indicator inactive">Triangle(t)</div>
+                    <div id="squareToDraw" class="indicator inactive">Square(s)</div>
+                    <div id="hLineToDraw" class="indicator inactive">Horizontal Line(h)</div>
+                    <div id="vLineToDraw" class="indicator inactive">Vertical Line(v)</div>
+                </div>
+            </div>
+            <div class="modes-container">
+                <h3>Color Mode</h3>
+                <div class="modes">
+                    <div id="blueColorMode" class="indicator inactive">Aggie Blue(b)</div>
+                    <div id="goldColorMode" class="indicator inactive">Aggie Gold(g)</div>
+                </div>
+            </div>
+            <div class="modes-container">
+                <h3>Draw Mode</h3>
+                <div class="modes">
+                    <div id="filledDrawMode" class="indicator inactive">Filled(f)</div>
+                    <div id="outlineDrawMode" class="indicator inactive">Outlines(o)</div>
+                </div>
+            </div>
+        </div>
+        <div id="webgl-container">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
